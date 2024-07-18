@@ -9,9 +9,10 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
+    telegram_id: int = None  # Telegram id
 
     class Config:
-        from_attributes = True  # обновлено для Pydantic V2
+        from_attributes = True  # Pydantic V2
 
 class UserLogin(BaseModel):
     login: str

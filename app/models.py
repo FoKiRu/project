@@ -8,3 +8,4 @@ class User(Base):
     login = Column(String, unique=True, index=True)
     hashed_password = Column(String)
     name = Column(String)
+    telegram_id = Column(Integer, unique=True, nullable=True)  # Telegram id
