@@ -3,6 +3,6 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 pydantic
-aiogram==2.23.1  # Проверьте текущую версию aiogram, может понадобиться изменить версию
+aiogram==2.23.1
 passlib[bcrypt]
 python-jose
